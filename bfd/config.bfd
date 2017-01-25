@@ -700,6 +700,11 @@ case "${targ}" in
     targ_selvecs="i386_elf32_vec iamcu_elf32_vec x86_64_elf32_vec i386_aout_linux_vec i386_pei_vec x86_64_pei_vec l1om_elf64_vec k1om_elf64_vec"
     want64=true
     ;;
+  x86_64-*-harvey-*)
+    targ_defvec=x86_64_elf64_vec
+    targ_selvecs="i386_elf32_vec iamcu_elf32_vec x86_64_elf32_vec i386_aout_linux_vec i386_pei_vec x86_64_pei_vec l1om_elf64_vec k1om_elf64_vec"
+    want64=true
+    ;;
   x86_64-*-nacl*)
     targ_defvec=x86_64_elf32_nacl_vec
     targ_selvecs="i386_elf32_nacl_vec x86_64_elf64_nacl_vec arm_elf32_nacl_be_vec arm_elf32_nacl_le_vec"

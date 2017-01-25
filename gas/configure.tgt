@@ -485,6 +485,7 @@ case ${generic_target} in
   *-*-aros*)				fmt=elf em=linux ;;
   *-*-vxworks* | *-*-windiss)		fmt=elf em=vxworks ;;
   *-*-netware)				fmt=elf em=netware ;;
+  *-*-harvey)                           fmt=elf ;;
 esac
 
 case ${cpu_type} in
